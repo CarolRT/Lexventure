@@ -1,3 +1,45 @@
 main {
-    background-color: aqua;
+    background-color: aqua; /*QUITAR TRAS PRUEBAS*/
+}
+
+#game-board {
+    display: flex; /*colocar tarjetas en línea*/
+}
+
+.card-container {
+    width: 15%;
+    margin: 1% 0 0 1%;
+}
+
+.card {
+    background: #78866B;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    transform-style: preserve-3d; /*transformacion y conservar posicion 3d*/
+    transition: transform 0.5s;
+}
+
+.card.is-flipped {
+    transform: rotateY(180deg); /*girar sobre el eje Y con un giro de 180º*/
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    backface-visibility: hidden; /*oculta la parte trasera de un elemento previamente girado*/
+}
+
+.back {
+    transform: rotateY(180deg); /*para que esté girada boca abajo*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    backface-visibility: hidden; /*oculta la parte trasera de un elemento previamente girado*/
 }
