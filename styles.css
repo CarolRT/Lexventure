@@ -2,8 +2,18 @@ main {
     background-color: aqua; /*QUITAR TRAS PRUEBAS*/
 }
 
+
 #game-board {
     display: flex; /*colocar tarjetas en línea*/
+}
+
+.hidden {
+    display: none; /*Para el resto de pantallas*/
+}
+
+/*Añadido para no usar !important*/
+#game-board.hidden {
+    display:none; /*Exclusivo para la pantalla game-board*/
 }
 
 .card-container {
