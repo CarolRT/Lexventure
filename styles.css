@@ -3,7 +3,7 @@ main {
 }
 
 
-#game-board {
+.game-board {
     display: flex; /*colocar tarjetas en línea*/
 }
 
@@ -12,11 +12,11 @@ main {
 }
 
 /*Añadido para no usar !important*/
-#game-board.hidden {
+.game-board.hidden {
     display:none; /*Exclusivo para la pantalla game-board*/
 }
 
-.card-container {
+.cards-container {
     width: 15%;
     margin: 1% 0 0 1%;
 }
